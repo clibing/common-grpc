@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package test;
+
+option java_multiple_files = true;
+option java_package = "com.clibing.test";
+
+import "common.proto";
+
+service TestService {
+    rpc test(TestRequest) returns(TestResponse){};
+}
+
+message TestRequest{
+    string token = 1; // token
+}
+
+message TestResponse{
+    common.CommonStatus status = 1; // common status and code
+    Data data = 2; // result data
+    message Data {
+        map<string, string> attribute = 1; // attribute map
+    }
+}
