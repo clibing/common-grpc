@@ -102,5 +102,24 @@
             </plugin>
         </plugins>
     </build>
+    <developers>
+        <developer>
+            <name>clibing</name>
+            <email>wmsjhappy@gmail.com</email>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:https://github.com/clibing/common-grpc.git</connection>
+        <developerConnection>scm:git:https://github.com/clibing/common-grpc.git</developerConnection>
+        <tag>master</tag>
+        <url>https://github.com/clibing/common-grpc.git</url>
+    </scm>
 
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 </project>
