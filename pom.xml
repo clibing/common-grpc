@@ -7,6 +7,7 @@
     <groupId>com.clibing</groupId>
     <artifactId>common-grpc</artifactId>
     <version>1.0.1</version>
+    <name>common-grpc</name>
 
     <properties>
         <grpc.version>1.37.0</grpc.version>
