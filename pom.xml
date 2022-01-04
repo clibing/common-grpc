@@ -7,7 +7,10 @@
     <groupId>com.clibing</groupId>
     <artifactId>common-grpc</artifactId>
     <version>1.0.1</version>
+
     <name>common-grpc</name>
+    <description>common proto, exception with code, wrapper rpc method</description>
+    <url>https://github.com/clibing/common-grpc.git</url>
 
     <properties>
         <grpc.version>1.37.0</grpc.version>
