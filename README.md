@@ -1,5 +1,14 @@
 include grpc utils
 
+pom.xml
+```xml
+  <dependency>
+    <groupId>com.clibing</groupId>
+    <artifactId>common-grpc</artifactId>
+    <version>1.0.1</version>
+  </dependency>
+```
+
 1. test proto
 ```protobuf
 syntax = "proto3";
