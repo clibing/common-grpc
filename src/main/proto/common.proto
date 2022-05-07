@@ -74,4 +74,3 @@ message HealthResponse {
         map<string, string> attribute = 3; // 扩展属性
     }
 }
-1
