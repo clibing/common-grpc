@@ -25,6 +25,7 @@ enum CommonCode {
     RESOURCE_NOT_FOUND = 403; // 资源没有找到
     REQUEST_PARAMETER_ERROR = 404; // 请求参数异常
     SERVER_ERROR = 500; // 服务级别错误
+    CONVERT_ENUM_ERROR = 501; // 转换 从IEnum.getValue()->enum异常
 }
 
 /**
@@ -45,12 +46,18 @@ message EmptyRequest {
 }
 
 /**
+ * 只含有一个值
+ */
+message SingleRequest {
+    string value = 1; // 只含有一个值
+}
+
+/**
  * 只有返回状态
  */
 message SingleResponse {
     CommonStatus status = 1; // 状态
 }
-
 
 /**
  * 健康检查restful响应
@@ -67,3 +74,4 @@ message HealthResponse {
         map<string, string> attribute = 3; // 扩展属性
     }
 }
+1

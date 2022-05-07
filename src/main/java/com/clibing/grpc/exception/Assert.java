@@ -1,5 +1,7 @@
 package com.clibing.grpc.exception;
 
+import com.clibing.common.CommonCode;
+
 import java.util.function.Supplier;
 
 /**
@@ -38,6 +40,27 @@ public class Assert {
       return;
     }
     throw supplier.get();
+  }
+
+  public static void isTrue(boolean value, int code, String message) {
+    if (value) {
+      return;
+    }
+    throw new CodeException() {
+      @Override
+      public int getCode() {
+        return code;
+      }
+
+      @Override
+      public String getMessage() {
+        return message;
+      }
+    };
+  }
+
+  public static void isTrue(boolean value, String message) {
+    isTrue(value, CommonCode.SERVER_ERROR_VALUE, message);
   }
 }
 

@@ -6,30 +6,31 @@
 
     <groupId>com.clibing</groupId>
     <artifactId>common-grpc</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <name>common-grpc</name>
     <description>common proto, exception with code, wrapper rpc method</description>
     <url>https://github.com/clibing/common-grpc.git</url>
 
     <properties>
-        <grpc.version>1.37.0</grpc.version>
-        <protobuf-java.version>3.17.3</protobuf-java.version>
-        <slf4j.version>1.7.32</slf4j.version>
-        <logback.version>1.2.10</logback.version>
+        <grpc.version>1.46.0</grpc.version>
+        <protobuf-java.version>3.20.1</protobuf-java.version>
+        <slf4j.version>1.7.36</slf4j.version>
+        <logback.version>1.2.11</logback.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
+        <lombok.version>1.18.24</lombok.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.8</version>
+            <version>${lombok.version}</version>
         </dependency>
         <dependency>
             <groupId>io.grpc</groupId>
