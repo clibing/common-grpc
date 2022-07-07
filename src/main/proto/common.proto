@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package common;
 
+option go_package = "github.com/clibing/common-grpc/go";
 option java_multiple_files = true;
 option java_package = "com.clibing.common";
 
